@@ -1,0 +1,25 @@
+@import "../../styles.scss";
+
+.job-opportunity {
+  background-color: white;
+  height: 130px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.filter {
+  color: $dark-cyan;
+  background-color: $light-cyan-bg;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 6px 15px;
+
+  &:hover,
+  &:active {
+    background-color: $dark-cyan;
+    color: white;
+    text-decoration: none;
+  }
+}
+
