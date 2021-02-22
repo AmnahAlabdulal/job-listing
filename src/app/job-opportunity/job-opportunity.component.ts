@@ -9,7 +9,7 @@ export class JobOpportunityComponent implements OnInit {
   list: Array<Object>;
   constructor() {
     this.list = jobData.jobData.items;
-    // console.log(this.list);
+    console.log(this.list);
   }
 
   ngOnInit(): void {
