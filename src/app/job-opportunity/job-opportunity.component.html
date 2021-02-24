@@ -1,8 +1,8 @@
-<div class="row align-items-center job-opportunity" *ngFor="let job of list">
-    <div class="col-md-2">
+<div class="row align-items-center job-opportunity " *ngFor="let job of list">
+    <div class="col-auto text-center">
         <img class="logo" src="{{job.logo}}">
     </div>
-    <div class="col-4">
+    <div class="col-md-3 col-sm-12 job-info">
         <div class="row">
             <p class="cyan-sm-text"> {{job.company}} </p>
         </div>
@@ -10,21 +10,21 @@
             <p class="black-md-text"> {{job.jobTitle }}</p>
         </div>
         <div class="row">
-            <div class="col-3">
+            <div class="col-auto">
                 <p class="small-text"> {{job.postDate}}</p>
             </div>
-            <div class="col-3">
+            <div class="col-auto">
                 <p class="small-text"> {{job.jobType}} </p>
             </div>
-            <div class="col-4">
+            <div class="col-auto">
                 <p class="small-text"> {{job.location}} </p>
             </div>
         </div>
 
     </div>
 
-    <div class="col-6">
-        <div class="row justify-content-end">
+    <div class="col-md-7 col-sm-12">
+        <div class="row tools">
             <div class="col-auto" *ngFor="let tool of job.tools">
                 <a href="#" class="filter"> {{ tool }} </a>
             </div>
