@@ -1,18 +1,29 @@
 @import "../../styles.scss";
 
-.job-opportunity {
+
+.filter-box {
+  margin-top: -90px !important;
+}
+
+.filter-row {
+  padding-bottom: 10px;
+}
+
+.job-opportunity,
+.filter-box {
   background-color: white;
   height          : auto;
   border-radius   : 5px;
   margin          : 20px 0;
   padding         : 20px 0;
   position        : relative;
+  box-shadow: 0px 4px 11px -5px $dark-cyan;
 }
 
-.row.tools {
-  display        : flex;
-  justify-content: flex-end !important;
-  flex-wrap      : wrap;
+
+.tools {
+  display  : flex;
+  flex-wrap: wrap;
 
   .col-auto {
     padding: 10px;
@@ -24,31 +35,76 @@
   height: 80px;
 }
 
-.filter {
+.filter,
+.filter-- {
   color           : $dark-cyan;
   background-color: $light-cyan-bg;
   font-size       : 12px;
   font-weight     : 700;
   border-radius   : 5px;
   padding         : 6px 15px;
-
-  &:hover,
-  &:active {
-    background-color: $dark-cyan;
-    color           : white;
-    text-decoration : none;
-  }
 }
 
-@media only screen and (max-width: 800px) {
+.filter:hover,
+.filter:active {
+  background-color: $dark-cyan;
+  color           : white;
+  text-decoration : none;
+}
+
+.filter--:hover,
+.filter--:active {
+  text-decoration: none;
+  color          : $dark-cyan;
+}
+
+.filter-btn {
+  background-color          : $dark-cyan;
+  color                     : white;
+  width                     : 30px;
+  border                    : none;
+  border-top-right-radius   : 5px;
+  border-bottom-right-radius: 5px;
+  font-weight               : 700;
+  font-size                 : 12px;
+}
+
+.filter-btn:hover {
+  background-color: black;
+}
+
+.isDisabled {
+  color          : currentColor;
+  cursor         : not-allowed;
+  pointer-events : none;
+  opacity        : 0.5;
+  text-decoration: none;
+}
+
+.deleteBtn {
+  color           : $dark-cyan;
+  background-color: $light-cyan-bg;
+  font-size       : 12px;
+  font-weight     : 700;
+  border-radius   : 5px;
+  padding         : 6px 15px;
+  cursor          : pointer;
+}
+
+.deleteBtn:hover {
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 900px) {
 
   .job-opportunity {
-    margin: 40px;
+    margin : 40px;
     padding: 20px;
   }
 
   .job-info {
-    margin        : 20px 0 5px 10px;
+    margin        : 20px 10px;
     padding-bottom: 10px;
     border-bottom : 1px solid lightgrey;
   }

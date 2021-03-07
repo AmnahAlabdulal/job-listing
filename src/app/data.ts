@@ -11,7 +11,7 @@ export default {
                 "location": "USA only",
                 "role": "Frontend",
                 "level": "Junior",
-                "Languages": ["javaScript"],
+                "Languages": ["JavaScript"],
                 "tools": ["Vue", "Sass"]
             },
             {
@@ -23,7 +23,7 @@ export default {
                 "location": "Worldwide",
                 "role": "Fullstack",
                 "level": "Midweight",
-                "Languages": ["javaScript", "Python"],
+                "Languages": ["JavaScript", "Python"],
                 "tools": ["Django"]
             },
             {
