@@ -17,7 +17,7 @@
   margin          : 20px 0;
   padding         : 20px 0;
   position        : relative;
-  box-shadow: 0px 4px 11px -5px $dark-cyan;
+  box-shadow: 0px 11px 34px -20px $dark-cyan;
 }
 
 
@@ -70,7 +70,7 @@
 }
 
 .filter-btn:hover {
-  background-color: black;
+  background-color: $very-dark-grayish-cyan;
 }
 
 .isDisabled {
@@ -83,10 +83,8 @@
 
 .deleteBtn {
   color           : $dark-cyan;
-  background-color: $light-cyan-bg;
   font-size       : 12px;
   font-weight     : 700;
-  border-radius   : 5px;
   padding         : 6px 15px;
   cursor          : pointer;
 }
@@ -98,10 +96,12 @@
 
 @media only screen and (max-width: 900px) {
 
-  .job-opportunity {
+  .job-opportunity, 
+  .filter-box {
     margin : 40px;
     padding: 20px;
   }
+
 
   .job-info {
     margin        : 20px 10px;

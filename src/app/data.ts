@@ -28,6 +28,7 @@ export default {
             },
             {
                 "logo": "../../assets/images/photosnap.svg",
+                "label": ["FEATURED", "NEW!"],
                 "company": "Photosnap",
                 "jobTitle": "Senior Frontend Developer",
                 "postDate": "1d ago",
@@ -40,6 +41,7 @@ export default {
             },
             {
                 "logo": "../../assets/images/manage.svg",
+                "label": ["FEATURED", "NEW!"],
                 "company": "Manage",
                 "jobTitle": "Fullstack Developer",
                 "postDate": "1d ago",
@@ -52,6 +54,7 @@ export default {
             },
             {
                 "logo": "../../assets/images/account.svg",
+                "label": [ "NEW!"],
                 "company": "Account",
                 "jobTitle": "Junior Frontend Developer",
                 "postDate": "2d ago",
@@ -94,7 +97,7 @@ export default {
                 "location": "UK only",
                 "role": "Backend",
                 "level": "Junior",
-                "Languages": [ "Ruby"],
+                "Languages": ["Ruby"],
                 "tools": ["RoR"]
             },
             {
