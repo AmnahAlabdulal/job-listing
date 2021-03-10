@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit } from '@angular/core';
+
 import jobData from '../data';
 @Component({
   selector: 'job-opportunity',
@@ -12,22 +13,23 @@ export class JobOpportunityComponent implements OnInit {
   constructor() {
     this.filters = [];
     this.list = [{}];
-
   }
 
   ngOnInit(): void {
     this.list = jobData.jobData.items;
-    // console.log(this.list);
+    console.log(this.list);
   }
 
   addToFilters(filter: string) {
     if (!this.filters.includes(filter)) {
       this.filters.push(filter);
     }
+
   }
 
   deleteAllFilters() {
     this.filters = [];
+
   }
 
   deleteFilter(filter: string) {
@@ -36,5 +38,6 @@ export class JobOpportunityComponent implements OnInit {
       this.filters.splice(index, 1);
     }
   }
+
 
 }

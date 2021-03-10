@@ -82,7 +82,7 @@
 }
 
 .deleteBtn {
-  color           : $dark-cyan;
+  color           : gray;
   font-size       : 12px;
   font-weight     : 700;
   padding         : 6px 15px;
@@ -90,6 +90,7 @@
 }
 
 .deleteBtn:hover {
+  color: $dark-cyan;
   text-decoration: underline;
 }
 
@@ -117,7 +118,5 @@
     height  : 60px;
   }
 
-  .row.tools {
-    justify-content: flex-start !important;
-  }
+ 
 }

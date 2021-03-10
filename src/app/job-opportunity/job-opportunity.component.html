@@ -8,42 +8,48 @@
             <span class="deleteBtn"> Clear </span>
         </div>
     </div>
+    
+    <span *ngFor="let job of list | jobFilter:filters" >
+        <div class="row align-items-center job-opportunity">
+            <div class="col-auto text-center">
+                <img class="logo" src="{{job.logo}}">
+            </div>
+            <div class="col-md-3 col-sm-12 job-info">
+                <div class="row">
+                    <p class="cyan-sm-text"> {{job.company}} </p>
+                    <div *ngIf="job.lebel">
+                        <p class="featured"> {{job.label[0]}} </p>
+                        <p class="new"> {{job.label[1]}} </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="black-md-text"> {{job.jobTitle }}</p>
+                </div>
+                <div class="row">
+                    <div class="col-auto">
+                        <p class="small-text"> {{job.postDate}}</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="small-text"> {{job.jobType}} </p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="small-text"> {{job.location}} </p>
+                    </div>
+                </div>
+            </div>
 
-    <div class="row align-items-center job-opportunity " *ngFor="let job of list">
-        <div class="col-auto text-center">
-            <img class="logo" src="{{job.logo}}">
-        </div>
-        <div class="col-md-3 col-sm-12 job-info">
-            <div class="row">
-                <p class="cyan-sm-text"> {{job.company}} </p>
-            </div>
-            <div class="row">
-                <p class="black-md-text"> {{job.jobTitle }}</p>
-            </div>
-            <div class="row">
-                <div class="col-auto">
-                    <p class="small-text"> {{job.postDate}}</p>
-                </div>
-                <div class="col-auto">
-                    <p class="small-text"> {{job.jobType}} </p>
-                </div>
-                <div class="col-auto">
-                    <p class="small-text"> {{job.location}} </p>
+            <div class="col-auto ml-auto">
+                <div class="tools float-right">
+                    <div class="col-auto" *ngFor="let tool of job.tools">
+                        <a href="#" class="filter" [ngClass]="{'isDisabled':filters.includes(tool)}"
+                            (click)="addToFilters(tool)"> {{ tool }} </a>
+                    </div>
+                    <div class="col-auto" *ngFor="let lng of job.languages">
+                        <a href="#" class="filter" [ngClass]="{'isDisabled':filters.includes(lng)}"
+                            (click)="addToFilters(lng)"> {{ lng }} </a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="col-auto ml-auto">
-            <div class="tools float-right">
-                <div class="col-auto" *ngFor="let tool of job.tools">
-                    <a href="#" class="filter" [ngClass]="{'isDisabled':filters.includes(tool)}"
-                        (click)="addToFilters(tool)"> {{ tool }} </a>
-                </div>
-                <div class="col-auto" *ngFor="let lng of job.Languages">
-                    <a href="#" class="filter" [ngClass]="{'isDisabled':filters.includes(lng)}"
-                        (click)="addToFilters(lng)"> {{ lng }} </a>
-                </div>
-            </div>
-        </div>
-    </div>
+    </span>
 </div>

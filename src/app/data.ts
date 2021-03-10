@@ -11,7 +11,7 @@ export default {
                 "location": "USA only",
                 "role": "Frontend",
                 "level": "Junior",
-                "Languages": ["JavaScript"],
+                "languages": ["JavaScript"],
                 "tools": ["Vue", "Sass"]
             },
             {
@@ -23,7 +23,7 @@ export default {
                 "location": "Worldwide",
                 "role": "Fullstack",
                 "level": "Midweight",
-                "Languages": ["JavaScript", "Python"],
+                "languages": ["JavaScript", "Python"],
                 "tools": ["Django"]
             },
             {
@@ -36,7 +36,7 @@ export default {
                 "location": "USA only",
                 "role": "Frontend",
                 "level": "Senior",
-                "Languages": ["javaScript", "HTML", "CSS"],
+                "languages": ["javaScript", "HTML", "CSS"],
                 "tools": ["Vue", "Sass"]
             },
             {
@@ -49,12 +49,12 @@ export default {
                 "location": "Remote",
                 "role": "Fullstack",
                 "level": "Midweight",
-                "Languages": ["Python"],
+                "languages": ["Python"],
                 "tools": ["React"]
             },
             {
                 "logo": "../../assets/images/account.svg",
-                "label": [ "NEW!"],
+                "label": ["NEW!"],
                 "company": "Account",
                 "jobTitle": "Junior Frontend Developer",
                 "postDate": "2d ago",
@@ -62,7 +62,7 @@ export default {
                 "location": "USA only",
                 "role": "Frontend",
                 "level": "Junior",
-                "Languages": ["JavaScript"],
+                "languages": ["JavaScript"],
                 "tools": ["React", "SASS"]
             },
             {
@@ -74,7 +74,8 @@ export default {
                 "location": "USA only",
                 "role": "Frontend",
                 "level": "Junior",
-                "Languages": ["JavaScript"]
+                "languages": ["JavaScript"],
+                "tools": []
             },
             {
                 "logo": "../../assets/images/loop-studios.svg",
@@ -85,7 +86,7 @@ export default {
                 "location": "Worldwide",
                 "role": "Fullstack",
                 "level": "Midweight",
-                "Languages": ["JavaScript", "Ruby"],
+                "languages": ["JavaScript", "Ruby"],
                 "tools": ["SASS"]
             },
             {
@@ -97,7 +98,7 @@ export default {
                 "location": "UK only",
                 "role": "Backend",
                 "level": "Junior",
-                "Languages": ["Ruby"],
+                "languages": ["Ruby"],
                 "tools": ["RoR"]
             },
             {
@@ -109,7 +110,7 @@ export default {
                 "location": "Worldwide",
                 "role": "Frontend",
                 "level": "Junior",
-                "Languages": ["JavaScript", "HTML"],
+                "languages": ["JavaScript", "HTML"],
                 "tools": ["SASS"]
             }
         ]
