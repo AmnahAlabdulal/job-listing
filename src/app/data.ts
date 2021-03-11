@@ -4,6 +4,7 @@ export default {
         "items": [
             {
                 "logo": "../../assets/images/insure.svg",
+                "label": {},
                 "company": "Insure",
                 "jobTitle": "Junior Frontend Developer",
                 "postDate": "2w ago",
@@ -16,6 +17,7 @@ export default {
             },
             {
                 "logo": "../../assets/images/eyecam-co.svg",
+                "label": {},
                 "company": "Eyecam Co.",
                 "jobTitle": "Full Stack Engineer",
                 "postDate": "3w ago",
@@ -28,7 +30,7 @@ export default {
             },
             {
                 "logo": "../../assets/images/photosnap.svg",
-                "label": ["FEATURED", "NEW!"],
+                "label": { featured: 'FEATURED', new: 'NEW!' },
                 "company": "Photosnap",
                 "jobTitle": "Senior Frontend Developer",
                 "postDate": "1d ago",
@@ -41,7 +43,7 @@ export default {
             },
             {
                 "logo": "../../assets/images/manage.svg",
-                "label": ["FEATURED", "NEW!"],
+                "label": { featured: 'FEATURED', new: 'NEW!' },
                 "company": "Manage",
                 "jobTitle": "Fullstack Developer",
                 "postDate": "1d ago",
@@ -54,7 +56,7 @@ export default {
             },
             {
                 "logo": "../../assets/images/account.svg",
-                "label": ["NEW!"],
+                "label": { new: 'NEW!' },
                 "company": "Account",
                 "jobTitle": "Junior Frontend Developer",
                 "postDate": "2d ago",
@@ -67,6 +69,7 @@ export default {
             },
             {
                 "logo": "../../assets/images/myhome.svg",
+                "label": {},
                 "company": "MyHome",
                 "jobTitle": "Junior Frontend Developer",
                 "postDate": "5d ago",
@@ -79,6 +82,7 @@ export default {
             },
             {
                 "logo": "../../assets/images/loop-studios.svg",
+                "label": {},
                 "company": "Loop Studios",
                 "jobTitle": "Software Engineer",
                 "postDate": "1w ago",
@@ -91,6 +95,7 @@ export default {
             },
             {
                 "logo": "../../assets/images/faceit.svg",
+                "label": {},
                 "company": "FaceIt",
                 "jobTitle": "Junior Backend Developer",
                 "postDate": "2w ago",
@@ -103,6 +108,7 @@ export default {
             },
             {
                 "logo": "../../assets/images/shortly.svg",
+                "label": {},
                 "company": "Shortly",
                 "jobTitle": "Junior Developer",
                 "postDate": "2w ago",

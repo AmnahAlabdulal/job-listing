@@ -8,19 +8,22 @@
             <span class="deleteBtn"> Clear </span>
         </div>
     </div>
-    
-    <span *ngFor="let job of list | jobFilter:filters" >
-        <div class="row align-items-center job-opportunity">
+
+    <span *ngFor="let job of list | jobFilter:filters">
+        <div class="row align-items-center job-opportunity" [ngClass]="{'job-featured' : job.label.featured}">
             <div class="col-auto text-center">
                 <img class="logo" src="{{job.logo}}">
             </div>
             <div class="col-md-3 col-sm-12 job-info">
                 <div class="row">
-                    <p class="cyan-sm-text"> {{job.company}} </p>
-                    <div *ngIf="job.lebel">
-                        <p class="featured"> {{job.label[0]}} </p>
-                        <p class="new"> {{job.label[1]}} </p>
+                    <div class="col-auto d-flex pl-0">
+                        <p class="cyan-sm-text"> {{job.company}} </p>
+                        <div class="col-auto d-flex" *ngIf="job.label">
+                            <p *ngIf="job.label.new" class="new"> {{job.label.new}} </p>
+                            <p *ngIf="job.label.featured" class="featured"> {{job.label.featured}} </p>
+                        </div>
                     </div>
+
                 </div>
                 <div class="row">
                     <p class="black-md-text"> {{job.jobTitle }}</p>
@@ -38,7 +41,7 @@
                 </div>
             </div>
 
-            <div class="col-auto ml-auto">
+            <div class="col-auto pl-0 features">
                 <div class="tools float-right">
                     <div class="col-auto" *ngFor="let tool of job.tools">
                         <a href="#" class="filter" [ngClass]="{'isDisabled':filters.includes(tool)}"

@@ -9,7 +9,7 @@ export class JobFilterPipe implements PipeTransform {
   transform(list: any[], filters: any[]): any {
     if (filters.length > 0) {
       return list.filter(job => {
-        if (job.tools.some(tool => filters.includes(tool)) || job.languages.some(lng => filters.includes(lng))) {
+        if (job.tools.some((tool: any) => filters.includes(tool)) || job.languages.some((lng: any) => filters.includes(lng))) {
           return true
         } else {
           return false;

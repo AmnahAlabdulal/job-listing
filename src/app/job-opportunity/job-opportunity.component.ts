@@ -1,6 +1,6 @@
-import {Component, OnInit } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 import jobData from '../data';
+
 @Component({
   selector: 'job-opportunity',
   templateUrl: './job-opportunity.component.html',
@@ -8,16 +8,21 @@ import jobData from '../data';
 })
 export class JobOpportunityComponent implements OnInit {
   list: Array<Object>;
-  filters: Array<String>;
+  filters: Array<string>;
 
   constructor() {
     this.filters = [];
     this.list = [{}];
+
   }
 
   ngOnInit(): void {
     this.list = jobData.jobData.items;
-    console.log(this.list);
+    this.list.sort((a, b) => {
+      if (a.label.featured) return -1
+      else
+        return 1
+    });
   }
 
   addToFilters(filter: string) {
@@ -29,7 +34,6 @@ export class JobOpportunityComponent implements OnInit {
 
   deleteAllFilters() {
     this.filters = [];
-
   }
 
   deleteFilter(filter: string) {
@@ -38,6 +42,7 @@ export class JobOpportunityComponent implements OnInit {
       this.filters.splice(index, 1);
     }
   }
+
 
 
 }
