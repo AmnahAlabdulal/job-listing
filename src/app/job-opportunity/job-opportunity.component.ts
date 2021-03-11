@@ -7,13 +7,11 @@ import jobData from '../data';
   styleUrls: ['./job-opportunity.component.scss']
 })
 export class JobOpportunityComponent implements OnInit {
-  list: Array<Object>;
+  list!: Array<any>;
   filters: Array<string>;
 
   constructor() {
     this.filters = [];
-    this.list = [{}];
-
   }
 
   ngOnInit(): void {
