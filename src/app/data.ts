@@ -38,7 +38,7 @@ export default {
                 "location": "USA only",
                 "role": "Frontend",
                 "level": "Senior",
-                "languages": ["javaScript", "HTML", "CSS"],
+                "languages": ["JavaScript", "HTML", "CSS"],
                 "tools": ["Vue", "Sass"]
             },
             {
